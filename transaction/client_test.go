@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stefankopieczek/gossip/base"
-	"github.com/stefankopieczek/gossip/log"
-	"github.com/stefankopieczek/gossip/parser"
-	"github.com/stefankopieczek/gossip/transport"
+	"github.com/tomlaflamme/gossip/base"
+	"github.com/tomlaflamme/gossip/log"
+	"github.com/tomlaflamme/gossip/parser"
+	"github.com/tomlaflamme/gossip/transport"
 )
 
 var c_SERVER string = "localhost:5060"
