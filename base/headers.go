@@ -546,6 +546,66 @@ func (h ContentLength) Name() string { return "Content-Length" }
 
 func (h ContentLength) Copy() SipHeader { return h }
 
+type ContentType string
+
+func (contentType ContentType) String() string {
+	return fmt.Sprintf("ContentType: %s", contentType)
+}
+
+func (h ContentType) Name() string { return "Content-Type" }
+
+func (h ContentType) Copy() SipHeader { return h }
+
+type ContentEncoding string
+
+func (contentEncoding ContentEncoding) String() string {
+	return fmt.Sprintf("ContentEncoding: %s", contentEncoding)
+}
+
+func (h ContentEncoding) Name() string { return "Content-Encoding" }
+
+func (h ContentEncoding) Copy() SipHeader { return h }
+
+type AisService string
+
+func (aisService AisService) String() string {
+	return fmt.Sprintf("AisService: %s", aisService)
+}
+
+func (h AisService) Name() string { return "AisService" }
+
+func (h AisService) Copy() SipHeader { return h }
+
+type AisOptions string
+
+func (aisOptions AisOptions) String() string {
+	return fmt.Sprintf("AisOptions: %s", aisOptions)
+}
+
+func (h AisOptions) Name() string { return "AisOptions" }
+
+func (h AisOptions) Copy() SipHeader { return h }
+
+type AisMsgOptions string
+
+func (aisMsgOptions AisMsgOptions) String() string {
+	return fmt.Sprintf("AisMsgOptions: %s", aisMsgOptions)
+}
+
+func (h AisMsgOptions) Name() string { return "AisMsgOptions" }
+
+func (h AisMsgOptions) Copy() SipHeader { return h }
+
+type AisMsgId string
+
+func (aisMsgId AisMsgId) String() string {
+	return fmt.Sprintf("AisMsgId: %s", aisMsgId)
+}
+
+func (h AisMsgId) Name() string { return "AisMsgId" }
+
+func (h AisMsgId) Copy() SipHeader { return h }
+
 type ViaHeader []*ViaHop
 
 // A single component in a Via header.
